@@ -25,7 +25,7 @@ function is_sudo(msg)
 end
 function is_admin(msg)
   local var = false
-  for k,v in pairs(config.admin_users)do 
+  for k,v in pairs(config.admins)do 
     if k == msg.sender_user_id_  then
       var = true
     end
